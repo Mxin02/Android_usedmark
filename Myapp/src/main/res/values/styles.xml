@@ -1,0 +1,81 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <style name="left_back_img_style">
+        <item name="android:background">@drawable/imageview_btn_selector</item>
+        <item name="android:paddingLeft">15.0dip</item>
+        <item name="android:paddingRight">15.0dip</item>
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:src">@mipmap/icon_back</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <!-- 登录界面 -->
+    <style name="right_btn_style">
+        <item name="android:background">@drawable/imageview_btn_selector</item>
+        <item name="android:paddingLeft">15.0dip</item>
+        <item name="android:paddingRight">15.0dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <!-- 分享 -->
+    <style name="share_title_bar_style">
+        <item name="android:background">@drawable/bg_titlebar</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/share_title_bar_height</item>
+    </style>
+
+    <!-- 子界面 -->
+    <style name="title_bar_style">
+        <item name="android:background">@color/title_bar_color</item>
+        <item name="android:paddingLeft">0.0dip</item>
+        <item name="android:paddingRight">0.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">50.0dip</item>
+    </style>
+
+    <style name="custom_dialog" parent="@android:style/Theme.Dialog">
+        <!-- 边框 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <!-- 背景透明 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 模糊 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 遮罩层 -->
+        <item name="android:backgroundDimAmount">0.5</item>
+    </style>
+
+
+    <!--POP_FULL-->
+    <style name="Animations_GrowFromBottom">
+        <item name="android:windowEnterAnimation">@anim/grow_from_bottom</item>
+        <item name="android:windowExitAnimation">@anim/shrink_from_top</item>
+    </style>
+
+    <style name="myedit" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">#9b9999</item>
+        <item name="colorControlActivated">@color/grenn_normal</item>
+        <item name="android:textCursorDrawable">@drawable/edit_text_curcus</item>
+    </style>
+
+</resources>

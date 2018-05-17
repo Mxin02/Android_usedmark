@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false">
+        <shape android:shape="rectangle">
+            <!--圆角-->
+            <corners android:radius="5dp" />
+            <!--填充颜色-->
+            <solid android:color="@color/btn_noraml" />
+
+        </shape>
+    </item>
+
+    <item android:state_enabled="true">
+        <shape android:shape="rectangle">
+            <!--圆角-->
+            <corners android:radius="5dp" />
+            <!--填充颜色-->
+            <solid android:color="@color/grenn_normal" />
+
+        </shape>
+    </item>
+    <!--单击时是一个带圆角,绿色背景,白色边框的矩形-->
+    <item android:state_enabled="true" android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <!--圆角-->
+            <corners android:radius="5dp" />
+            <!--填充颜色-->
+            <solid android:color="@color/green_select" />
+
+        </shape>
+    </item>
+</selector>

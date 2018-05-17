@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/activity_up_load_acitivity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="160dp">
+            <!--展示上传的图片-->
+            <ImageView
+                android:id="@+id/upload_add"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_add_goods" />
+
+            <GridView
+                android:id="@+id/lod_ridView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginTop="30dp"
+                android:columnWidth="60dp"
+                android:horizontalSpacing="10dp"
+                android:numColumns="auto_fit"
+                android:verticalSpacing="10dp"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginBottom="1dp"
+            android:layout_marginTop="1dp"
+            android:background="@color/bg_tab_item_text_normal"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/upload_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/upload_edit"
+                android:hint="宝贝标题"
+                android:maxLength="15"
+                android:padding="10dp"
+                android:singleLine="true" />
+
+            <EditText
+                android:id="@+id/upload_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/upload_edit"
+                android:gravity="top"
+                android:hint="在这里详细描述一下宝贝的转手原因、入手渠道、规格尺寸、新旧程度和使用感受吧"
+                android:maxLines="3"
+                android:padding="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:id="@+id/rl_paied_order_price"
+                android:layout_width="fill_parent"
+                android:layout_height="40.0dip"
+                android:background="@drawable/list_view_item_bg_selector"
+                android:clickable="true"
+                android:paddingLeft="8.0dip">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="价格"
+                    android:textColor="@color/textColor_32"
+                    android:textSize="@dimen/section_text_size" />
+
+                <TextView
+                    android:id="@+id/upload_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="30dp"
+                    android:text="开个价"
+                    android:textColor="@color/textColor_32"
+                    android:textSize="@dimen/size_19" />
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10.0dip"
+                    android:src="@mipmap/arrow_right_my_gray" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_paied_order_loactions"
+                android:layout_width="fill_parent"
+                android:layout_height="40.0dip"
+                android:background="@drawable/list_view_item_bg_selector"
+                android:clickable="true"
+                android:paddingLeft="8.0dip">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="分类"
+                    android:textColor="@color/textColor_32"
+                    android:textSize="@dimen/section_text_size" />
+
+                <TextView
+                    android:id="@+id/upload_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="30dp"
+                    android:text="分个类"
+                    android:textColor="@color/textColor_32"
+                    android:textSize="@dimen/size_19" />
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10.0dip"
+                    android:src="@mipmap/arrow_right_my_gray" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_paied_order_phone"
+                android:layout_width="fill_parent"
+                android:layout_height="40.0dip"
+                android:background="@drawable/list_view_item_bg_selector"
+                android:clickable="true"
+                android:paddingLeft="8.0dip">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="联系电话"
+                    android:textColor="@color/textColor_32"
+                    android:textSize="@dimen/section_text_size" />
+
+                <TextView
+                    android:id="@+id/upload_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="30dp"
+                    android:text="留个电话"
+                    android:textColor="@color/textColor_32"
+                    android:textSize="@dimen/size_19" />
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10.0dip"
+                    android:src="@mipmap/arrow_right_my_gray" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/quick_login_btn"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="40.0dip"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/round_btn_orange_self_selector"
+                android:text="确认"
+                android:textColor="@color/white"
+                android:textSize="18.0sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/activity_up_load_acitivity_rela"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@mipmap/lose" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:text="您需要先登录才能上传哟。" />
+
+        <Button
+            android:id="@+id/upload_login"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/upload_btn"
+            android:text="去登录"
+            android:textColor="#787575" />
+    </LinearLayout>
+</RelativeLayout>

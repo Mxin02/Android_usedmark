@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#88000000"
+    android:orientation="vertical"
+    tools:context="com.example.myapplication.Acitivity.RemarkActivity">
+
+    <RelativeLayout
+        android:id="@+id/activity_buy"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/buy_ll"></RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/buy_ll"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_alignParentBottom="true"
+        android:background="#fff"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/buy_Lin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:text="购买数量："
+                android:textSize="18dp" />
+
+            <com.example.myapplication.view.adderView
+                android:id="@+id/adderview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:textSize="18dp" />
+
+
+        </LinearLayout>
+
+
+
+        <Button
+            android:id="@+id/btn_buy"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true"
+            android:background="#e4581a"
+            android:gravity="center"
+            android:text="立即购买"
+            android:textColor="@color/white"
+            android:textSize="17dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

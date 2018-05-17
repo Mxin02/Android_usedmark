@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/remark_relativey"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fffcfc"
+    android:orientation="vertical">
+
+
+    <ExpandableListView
+        android:id="@+id/upload_list_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/maindetail_sell"
+        android:divider="@null"
+        android:fadingEdge="none"
+        android:groupIndicator="@null"
+        android:listSelector="#00000000"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+    </ExpandableListView>
+
+
+    <RelativeLayout
+        android:id="@+id/maindetail_sell"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="#fffcfc"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/left">
+
+            <TextView
+                android:id="@+id/btn_remark"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#fffcfc"
+                android:gravity="center"
+                android:text="评论"
+                android:textColor="#9f9c9c"
+                android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/btn_chat"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#fffcfc"
+                android:gravity="center"
+                android:text="聊一聊"
+                android:textColor="#9f9c9c"
+                android:textSize="17dp" />
+
+
+            <TextView
+                android:id="@+id/btn_buy"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#e4581a"
+                android:gravity="center"
+                android:text="立即购买"
+                android:textColor="@color/white"
+                android:textSize="17dp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:text="¥"
+                android:textColor="@color/app_yellow"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="899"
+                android:textColor="@color/app_yellow"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</RelativeLayout>
+

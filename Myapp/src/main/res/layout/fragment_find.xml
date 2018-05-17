@@ -1,0 +1,64 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5"
+    tools:context="com.example.myapplication.fragment.FindFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/fauild"
+            android:layout_width="150dp"
+            android:layout_height="160dp"
+            android:layout_centerInParent="true"
+            android:visibility="visible">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:src="@mipmap/failed" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="加载失败"
+                    android:textColor="#000"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/find_init"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/upload_btn"
+                    android:text="重新加载"
+                    android:textColor="#787575" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+        <ListView
+            android:id="@+id/find_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"></ListView>
+    </RelativeLayout>
+</FrameLayout>

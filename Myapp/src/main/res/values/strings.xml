@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">校园二手交易</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!--id-->
+    <item name="TAG_RECORD" type="id"></item>
+    <item name="TAG_TEXT" type="id"></item>
+    <item name="TAG_RESPONSE" type="id"></item>
+</resources>
